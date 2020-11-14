@@ -35,12 +35,12 @@
         tools:visibility="gone" />
 
 
-    <LinearLayout
+    <View
         android:id="@+id/view_stub"
         android:layout_width="94dp"
         android:layout_height="61dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"/>
 
         <ImageButton
             android:id="@+id/btnPlay"
@@ -85,7 +85,6 @@
             app:layout_constraintStart_toEndOf="@id/view_stub"
             app:layout_constraintTop_toTopOf="@id/view_stub"
             tools:visibility="visible" />
-    </LinearLayout>
 
 
 </android.support.constraint.ConstraintLayout>
