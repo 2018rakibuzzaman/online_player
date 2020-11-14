@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.jean.jcplayer.view.JcPlayerView">
+
+    <TextView
+        android:id="@+id/txtCurrentMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_normal"
+        android:layout_marginEnd="@dimen/spacing_normal"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginRight="@dimen/spacing_normal"
+        android:layout_marginStart="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxLines="2"
+        android:scrollHorizontally="true"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_large"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Some music awesome music name..."
+        tools:visibility="gone" />
+
+
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/view_stub"
+        android:layout_width="@dimen/touch_default"
+        android:layout_height="@dimen/touch_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnPlay"
+        android:layout_width="@dimen/touch_default"
+        android:layout_height="@dimen/touch_default"
+        android:layout_marginBottom="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:background="@null"
+        android:contentDescription="@string/play_button_description"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@id/view_stub"
+        app:layout_constraintStart_toEndOf="@id/view_stub"
+        app:layout_constraintTop_toTopOf="@id/view_stub"
+        app:srcCompat="@drawable/ic_play" />
+
+
+
+
+    <ImageButton
+        android:id="@+id/btnPause"
+        android:layout_width="@dimen/touch_default"
+        android:layout_height="@dimen/touch_default"
+        android:layout_marginBottom="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:background="@null"
+        android:contentDescription="@string/play_button_description"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/view_stub"
+        app:layout_constraintStart_toEndOf="@id/view_stub"
+        app:layout_constraintTop_toTopOf="@id/view_stub"
+        app:srcCompat="@drawable/ic_pause" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBarPlayer"
+        android:layout_width="@dimen/touch_default"
+        android:layout_height="@dimen/touch_default"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/view_stub"
+        app:layout_constraintStart_toEndOf="@id/view_stub"
+        app:layout_constraintTop_toTopOf="@id/view_stub"
+        tools:visibility="visible" />
+
+
+</android.support.constraint.ConstraintLayout>
