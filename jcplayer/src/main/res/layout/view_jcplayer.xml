@@ -35,60 +35,57 @@
         tools:visibility="gone" />
 
 
-
-    <View
-        android:visibility="gone"
+    <LinearLayout
         android:id="@+id/view_stub"
-        android:layout_width="@dimen/touch_default"
-        android:layout_height="@dimen/touch_default"
+        android:layout_width="94dp"
+        android:layout_height="61dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent">
 
-    <ImageButton
-        android:id="@+id/btnPlay"
-        android:layout_width="@dimen/touch_default"
-        android:layout_height="@dimen/touch_default"
-        android:layout_marginBottom="@dimen/spacing_large"
-        android:layout_marginTop="@dimen/spacing_normal"
-        android:background="@null"
-        android:contentDescription="@string/play_button_description"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="@id/view_stub"
-        app:layout_constraintStart_toEndOf="@id/view_stub"
-        app:layout_constraintTop_toTopOf="@id/view_stub"
-        app:srcCompat="@drawable/ic_play" />
-
-
+        <ImageButton
+            android:id="@+id/btnPlay"
+            android:layout_width="@dimen/touch_default"
+            android:layout_height="@dimen/touch_default"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:background="@null"
+            android:contentDescription="@string/play_button_description"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="@id/view_stub"
+            app:layout_constraintStart_toEndOf="@id/view_stub"
+            app:layout_constraintTop_toTopOf="@id/view_stub"
+            app:srcCompat="@drawable/ic_play" />
 
 
-    <ImageButton
-        android:id="@+id/btnPause"
-        android:layout_width="@dimen/touch_default"
-        android:layout_height="@dimen/touch_default"
-        android:layout_marginBottom="@dimen/spacing_large"
-        android:layout_marginTop="@dimen/spacing_normal"
-        android:background="@null"
-        android:contentDescription="@string/play_button_description"
-        android:scaleType="fitXY"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@id/view_stub"
-        app:layout_constraintStart_toEndOf="@id/view_stub"
-        app:layout_constraintTop_toTopOf="@id/view_stub"
-        app:srcCompat="@drawable/ic_pause" />
+        <ImageButton
+            android:id="@+id/btnPause"
+            android:layout_width="@dimen/touch_default"
+            android:layout_height="@dimen/touch_default"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:background="@null"
+            android:contentDescription="@string/play_button_description"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/view_stub"
+            app:layout_constraintStart_toEndOf="@id/view_stub"
+            app:layout_constraintTop_toTopOf="@id/view_stub"
+            app:srcCompat="@drawable/ic_pause" />
 
 
-    <ProgressBar
-        android:id="@+id/progressBarPlayer"
-        android:layout_width="@dimen/touch_default"
-        android:layout_height="@dimen/touch_default"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/spacing_large"
-        android:layout_marginTop="@dimen/spacing_normal"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@id/view_stub"
-        app:layout_constraintStart_toEndOf="@id/view_stub"
-        app:layout_constraintTop_toTopOf="@id/view_stub"
-        tools:visibility="visible" />
+        <ProgressBar
+            android:id="@+id/progressBarPlayer"
+            android:layout_width="@dimen/touch_default"
+            android:layout_height="@dimen/touch_default"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/view_stub"
+            app:layout_constraintStart_toEndOf="@id/view_stub"
+            app:layout_constraintTop_toTopOf="@id/view_stub"
+            tools:visibility="visible" />
+    </LinearLayout>
 
 
 </android.support.constraint.ConstraintLayout>
